@@ -1,0 +1,61 @@
+.container {
+    overflow-x: auto;
+    background-color: rgb(246, 246, 239);
+  }
+  
+  .banner {
+    background-color: rgb(255, 102, 0);
+    width: 700px;
+    overflow: auto;
+    height: 24px;
+  }
+  
+  .banner img{
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  
+  .banner p{
+    color: #000000;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    top:0px;
+    left: 30px;
+  }
+  
+  #canvas {
+    overflow-x: auto;
+    width: 700px;
+  }
+  
+  .main_record {
+    margin-left: 5px;
+  }
+  
+  .main_record .title {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+  
+  .main_record .subtitle {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 7pt;
+    color: #828282;
+    margin-top: 4px;
+  }
+  
+  .main_record a{
+    color: #828282;
+  }
+  
+  .main_record a:focus{
+    outline-style: none;
+  }

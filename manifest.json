@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+	"name": "Chrome插件demo",
+	"version": "1.0",
+	"description": "最简单的Chrome插件demo，需要快速做一个简单的插件时可以基于这个仓库开发",
+	"author": "sxei",
+	"permissions": [
+		"webNavigation", 
+    "<all_urls>",
+    "webRequest",
+	"tabs","activeTab"
+	],
+	"content_security_policy": "script-src 'self' https://freegpt.one; object-src 'self';",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://manager.apexgametw.com/*"],
+			"js": ["popup.js"],
+			"css": ["index.css"],
+			"run_at": "document_idle"
+		}
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	  },
+	"web_accessible_resources": 
+	[
+		"https://freegpt.one/"
+	]
+}
